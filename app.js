@@ -15,6 +15,6 @@ sequelize
 .sync({force:true})
 //.sync()
 .then(
-    app.listen(4000,() => console.log("4000 is working"))
+    app.listen(3000,() => console.log("3000 is working"))
 )
 .catch(err => console.log(err))
