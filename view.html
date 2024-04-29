@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Career</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Player Information</h1>
+
+    <form onsubmit="handleFormSubmit(event)">
+        <label for="name">Name : </label>
+        <br>
+        <input type="text" name="name" id="name">
+        <br><br>
+        <label for="dob">Date of Birth:</label>
+        <br>
+        <input type="date" id="dob" name="dob">
+        <br><br>
+        <label for="imgUrl">Photo Url : </label>
+        <br>
+        <input type="text" name="imgUrl" id="imgUrl">
+        <br><br>
+        <label for="place">Birthplace : </label>
+        <br>
+        <input type="text" name="place" id="place">
+        <br><br>
+        <label for="career">Career : </label>
+        <br>
+        <textarea type="text" name="career" id="career"></textarea>
+        <br><br>
+        <label for="score">Score : </label>
+        <br>
+        <input type="number" name="score" id="score">
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <br><hr><br>
+    <h1>Search Player</h1>
+    <input type="text" id="searchData" placeholder="Search A Player">
+    <button onclick="Search()">Search</button>
+
+    <div class="profile" ></div>
+    
+</body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="index.js"></script>
+</html>
