@@ -1,30 +1,30 @@
 const sequelize= require('../util/databse');
-const DataTypes=require('sequelize')
+const Sequelize=require('sequelize')
 
 const Profile = sequelize.define('Profile', {
     
     name:{
-        type: DataTypes.STRING,
+        type: Sequelize.STRING,
         allowNull: false,
     },
     dob:{
-        type: DataTypes.STRING,
+        type: Sequelize.STRING,
         allowNull: false,
     },
     imgUrl:{
-        type: DataTypes.STRING,
+        type: Sequelize.STRING,
         allowNull: false,
     },
     place:{
-        type: DataTypes.STRING,
+        type: Sequelize.STRING,
         allowNull: false,
     },
     career:{
-        type: DataTypes.TEXT,
+        type: Sequelize.TEXT,
         allowNull: false,
     },
     score:{
-        type: DataTypes.INTEGER,
+        type: Sequelize.INTEGER,
         allowNull: false,
     }
 });

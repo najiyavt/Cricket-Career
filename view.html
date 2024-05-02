@@ -8,8 +8,7 @@
 </head>
 <body>
     <h1>Player Information</h1>
-
-    <form onsubmit="handleFormSubmit(event)">
+    <form id="form"  onsubmit="handleFormSubmit(event)">
         <label for="name">Name : </label>
         <br>
         <input type="text" name="name" id="name">
@@ -36,12 +35,12 @@
         <br><br>
         <button type="submit">Submit</button>
     </form>
-    <br><hr><br>
+    <br><hr>
     <h1>Search Player</h1>
     <input type="text" id="searchData" placeholder="Search A Player">
     <button onclick="search()">Search</button>
 
-    <div id="profile" ></div>
+    <div id="profile"></div>
     
 </body>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>

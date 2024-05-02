@@ -5,8 +5,6 @@ const app = express();
 
 const routes=require('./routes/admin')
 const sequelize=require('./util/databse')
-const Player = require('./models/player')
-
 app.use(bodyParser.json());
 app.use(cors());
 app.use('/',routes)
